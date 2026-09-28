@@ -1,0 +1,10 @@
+id = "local.slack-notify"
+name = "Slack Notify"
+version = "0.1.0"
+min_herdr_version = "0.9.1"
+description = "Notify Slack when an agent finishes or needs input"
+platforms = ["linux"]
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ["./notify.sh"]
